@@ -18,8 +18,8 @@ This project was created using `bun init` in bun v1.0.2. [Bun](https://bun.sh) i
 
 - [x] User enters task with detailed description in a text file
 - [x] User inits swarm
-- [ ] Manager created
-- [ ] Manager reads task from file
+- [x] Manager created
+- [x] Manager reads task from file
 - [ ] Manager turns task into ordered list of subtasks
 - [ ] For each subtask, manager determines worker to use
   - [ ] Fetch worker list

@@ -2,6 +2,10 @@
   "name": "swarm",
   "module": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "task": "bun run.ts",
+    "swarm": "bun src/index.ts"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },

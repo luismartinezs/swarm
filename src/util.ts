@@ -1,8 +1,8 @@
-export function sleep(ms) {
+export function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-export async function withError(cb) {
+export async function withError<T extends () => Promise<any>>(cb: T) {
   try {
     return cb();
   } catch (err) {

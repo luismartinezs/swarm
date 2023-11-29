@@ -21,4 +21,6 @@ await createFile(`tasks/${taskFolderName}/task.txt`, `
 ${taskName}
 `);
 
-runSwarm(taskFolderName)
+console.log(`Created task ${taskName} in folder ${taskFolderName}, feel free to add more refined instructions`)
+
+// runSwarm(taskFolderName)

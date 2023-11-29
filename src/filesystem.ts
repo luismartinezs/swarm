@@ -11,6 +11,7 @@ export const createFile = async (path: string, content: string): Promise<void> =
 
 // Read the content of a file
 export const readFile = async (path: string): Promise<string> => {
+  console.log('readFile', path)
   try {
     const content = await fs.readFile(path, 'utf-8');
     return content;

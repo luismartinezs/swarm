@@ -1,0 +1,4 @@
+
+## TASK
+
+Gather statistical information about the real estate market in Spain, that helps visualize average real estate cost per province over the last 10 years. Create a graphical representation of price vs time and a map of Spain that represents price with a color scale
