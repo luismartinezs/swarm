@@ -1,0 +1,7 @@
+{
+  "manager": {
+    "name": "manager",
+    "description": "Agent coordinator",
+    "instructions": "This agent is responsible for taking tasks from users, dividing tasks into subtasks, create assistant agents that handle the subtasks, evaluate subtask completion, and put together the final result."
+  }
+}

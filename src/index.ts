@@ -1,18 +1,15 @@
-import { v4 as uuidv4 } from "uuid";
 import { manager, listAgents } from "./openai";
+import agentConfig from "./agentConfig.json";
 
-const uuid = uuidv4();
-
-async function main() {
+export async function runSwarm(folder?: string) {
   const { createAgent, delAgent } = manager()
   const _manager = await createAgent({
-    name: `test-${uuid}`,
-    description: `test assistant for uuid ${uuid}`,
-    instructions: "you are a helpful assistant",
+    name: `${agentConfig.manager.name}-${folder}`,
+    description: agentConfig.manager.description,
+    instructions: agentConfig.manager.instructions,
   })
   console.log((await listAgents()).data)
   await delAgent(_manager.id)
   console.log((await listAgents()).data)
 }
 
-main()

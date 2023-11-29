@@ -1,3 +1,4 @@
+import { runSwarm } from "./src";
 import { createFile, createFolder } from "./src/filesystem";
 import { camelCase } from "./src/util";
 
@@ -19,3 +20,5 @@ await createFile(`tasks/${taskFolderName}/task.txt`, `
 
 ${taskName}
 `);
+
+runSwarm(taskFolderName)

@@ -18,5 +18,10 @@
     "types": [
       "bun-types" // add Bun global
     ]
-  }
+  },
+  "include": [
+    "run.ts",
+    "src/**/*.ts", // Include all TypeScript files in src
+    "src/**/*.json" // Include all JSON files in src
+  ]
 }
