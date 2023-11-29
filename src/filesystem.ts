@@ -36,3 +36,20 @@ export const deleteFile = async (path: string): Promise<void> => {
     throw new Error(`Failed to delete file at ${path}: ${error}`);
   }
 };
+
+export const createFolder = async (path: string): Promise<void> => {
+  try {
+    await fs.mkdir(path, { recursive: true }); // recursive: true allows creating nested directories
+  } catch (error) {
+    throw new Error(`Failed to create folder at ${path}: ${error}`);
+  }
+};
+
+// Delete a folder
+export const deleteFolder = async (path: string): Promise<void> => {
+  try {
+    await fs.rmdir(path, { recursive: true }); // recursive: true allows removing non-empty directories
+  } catch (error) {
+    throw new Error(`Failed to delete folder at ${path}: ${error}`);
+  }
+};
