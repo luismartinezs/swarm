@@ -27,3 +27,6 @@ This project was created using `bun init` in bun v1.0.2. [Bun](https://bun.sh) i
 - [ ] Starting from 1st subtask, manager asks worker to complete task
 - [ ] Manager gathers worker output. When subtask is completed, it moves to next subtask and repeats process
 - [ ] When all subtasks are completed, manager prints results to file
+
+
+- Communication between manager and user needs to happen via chat-like UX
